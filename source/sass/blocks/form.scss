@@ -1,0 +1,145 @@
+.form {
+  width: 412px;
+
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 28px;
+
+  @media (max-width: $max-mobile-width) {
+    padding: 0 16px;
+    box-sizing: border-box;
+    margin-bottom: 26px;
+  }
+}
+
+.form__list {
+  list-style-type: none;
+  margin: 0 0 26px;
+  padding: 0;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.form__item {
+  margin-bottom: 17px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.form__item:last-child {
+  margin-bottom: 0;
+}
+
+.form__input {
+  width: 100%;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  padding: 15px 19px 14px;
+  box-sizing: border-box;
+  border: 1px solid $form-input-important-color;
+  border-radius: 2px;
+
+  @media (max-width: $max-mobile-width) {
+    padding: 14px 19px 13px;
+  }
+}
+
+.form__input::placeholder {
+  color: $form-input-important-color;
+  opacity: 1;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: $form-input-important-color;
+}
+
+.form__input::-ms-input-placeholder {
+  color: $form-input-important-color;
+}
+
+.form__input:-moz-placeholder {
+  color: $form-input-important-color;
+}
+
+.form__input:-ms-input-placeholder {
+  color: $form-input-important-color;
+}
+
+.form__review {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: $form-input-textarea-color;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid $form-input-textarea-color;
+  border-radius: 2px;
+  width: 100%;
+  min-height: 133px;
+  padding: 15px 25px;
+}
+
+.form__review::-webkit-input-placeholder {
+  color: $form-input-textarea-color;
+}
+
+.form__review::-moz-placeholder {
+  color: $form-input-textarea-color;
+  opacity: 1;
+}
+
+.form button {
+  width: 209px;
+  margin: 0 auto;
+  display: block;
+  background: $icon-background-color;
+  border: none;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 14px;
+  color: $base-dark-color;
+
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+    padding: 23px 14px 26px;
+
+    border-radius: 0 0 14px 14px;
+  }
+}
+
+.form button:hover {
+  background: $icon-background-color-hover;
+}
+
+.form button:active {
+  background: $icon-background-color-active;
+}
+
+.button__text {
+  display: block;
+
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
+
+.button__text--mobile {
+  display: none;
+
+  @media (max-width: $max-mobile-width) {
+    display: block;
+  }
+}

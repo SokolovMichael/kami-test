@@ -1,0 +1,43 @@
+.page {
+  height: 100%;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 19px;
+  font-weight: 500;
+  color: $base-dark-color;
+  background: $base-background-color;
+  min-width: $mobile-width-only;
+
+  @media (min-width: $mobile-width-only) {
+    overflow-x: hidden;
+  }
+}
+
+.page__body {
+  height: 100%;
+  margin: 0;
+  background: $body-background-color;
+
+  @media (min-width: $mobile-width-only) {
+    overflow-x: hidden;
+  }
+}
+
+.page__wrapper {
+  min-height: 100%;
+  margin: 18px 22px;
+  background: $base-background-color;
+
+  @media (max-width: $max-tablet-width) {
+    margin: 0;
+  }
+}
+
+.page__main {
+  position: relative;
+  padding-bottom: 106px;
+
+  @media (max-width: $max-mobile-width) {
+    padding-bottom: 15px;
+  }
+}

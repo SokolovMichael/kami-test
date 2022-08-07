@@ -1,0 +1,188 @@
+.nav {
+  width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: $max-tablet-width) {
+    width: auto;
+  }
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 110px;
+  flex-wrap: wrap;
+
+  @media (max-width: $max-mobile-width) {
+    min-height: 74px;
+    position: relative;
+  }
+}
+
+.nav__link {
+  display: block;
+  width: 308px;
+
+  @media (max-width: $max-mobile-width) {
+    width: 144px;
+    margin-left: 16px;
+    order: 1;
+  }
+}
+
+.nav__link--active {
+  pointer-events: none;
+}
+
+.nav__list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 556px;
+  font-size: 16px;
+  justify-content: space-between;
+
+  @media (max-width: $max-tablet-width) {
+    display: none;
+    order: 3;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    min-height: 480px;
+    background: $base-background-color;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.nav--nojs .nav__list-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+
+.nav--opened .nav__list-wrapper {
+  display: flex;
+  position: absolute;
+  z-index: 200;
+  top: 110px;
+
+  @media (max-width: $max-mobile-width) {
+    top: 74px;
+  }
+}
+
+.nav__list--product {
+  order: 2;
+
+  @media (max-width: $max-tablet-width) {
+    order: 1;
+  }
+}
+
+.nav__list--site {
+  order: 1;
+
+  @media (max-width: $max-tablet-width) {
+    order: 2;
+  }
+}
+
+.nav__list-button {
+  color: $base-dark-color;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  padding: 7px 17px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: $base-button-color;
+  width: 161px;
+  display: inline-block;
+  order: 3;
+  box-sizing: border-box;
+
+  @media (max-width: $max-tablet-width) {
+    margin: 0 auto;
+    width: 209px;
+    background: $icon-background-color;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 700;
+    padding: 15px 17px 12px;
+    display: block;
+  }
+}
+
+.nav__list-button:hover {
+  background: $button-color-hover;
+
+  @media (max-width: $max-tablet-width) {
+    background: $icon-background-color-hover;
+  }
+}
+
+.nav__list-button:active {
+  background: $button-color-active;
+
+  @media (max-width: $max-tablet-width) {
+    background: $icon-background-color-active;
+  }
+}
+
+.nav--nojs .nav__list-button {
+  display: none;
+}
+
+.nav__buttons-wrapper {
+  width: 189px;
+
+  @media (max-width: $max-tablet-width) {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-right: 16px;
+    order: 2;
+  }
+}
+
+.nav__toggle {
+  display: none;
+  background: $icon-background-color;
+  border-radius: 50%;
+  border: none;
+  width: 39px;
+  height: 39px;
+  position: relative;
+  cursor: pointer;
+
+  @media (max-width: $max-tablet-width) {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 0;
+  }
+}
+
+.nav__toggle:hover {
+  background: $icon-background-color-hover;
+}
+
+.nav__toggle:active {
+  background: $icon-background-color-active;
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
+}
+
+.nav__toggle-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}

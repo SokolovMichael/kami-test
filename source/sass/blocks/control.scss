@@ -1,0 +1,63 @@
+.control {
+  position: relative;
+  cursor: pointer;
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $form-input-textarea-color;
+  text-align: center;
+  display: block;
+
+  @media (max-width: $max-mobile-width) {
+    padding-left: 30px;
+  }
+}
+
+.control span:last-child {
+  color: $base-dark-color;
+}
+
+.control__mark-icon {
+  display: none;
+  position: absolute;
+  top: 3px;
+  left: 22px;
+  width: 12px;
+  height: 10px;
+  content: "";
+  z-index: 2;
+  fill: transparent;
+
+  @media (max-width: $max-mobile-width) {
+    top: 14px;
+    left: 48px;
+  }
+}
+
+.control__mark {
+  position: absolute;
+  top: -2px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid $form-input-textarea-color;
+  content: "";
+
+  @media (max-width: $max-mobile-width) {
+    top: 10px;
+    left: 43px;
+  }
+}
+
+.control input[type="checkbox"]:checked + .control__mark-icon {
+  display: block;
+}
+
+.control input[type="checkbox"]:checked ~ .control__mark {
+  background: $icon-background-color;
+  border: none;
+  width: 19px;
+  height: 19px;
+}

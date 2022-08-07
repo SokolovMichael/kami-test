@@ -1,0 +1,122 @@
+.intro {
+  background: $base-gray-color;
+  margin-bottom: 42px;
+  color: $base-background-color;
+  background-image: url("../img/background/intro/back.jpg");
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: cover;
+  min-height: 750px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/intro/back@2x.jpg");
+  }
+
+  @media (max-width: $max-mobile-width) {
+    min-height: 582px;
+    margin-bottom: 38px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    background-position: center center;
+    background-image: url("../img/background/intro/back-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/intro/back-mobile@2x.jpg");
+    }
+  }
+}
+
+.intro__swiper {
+  width: 1558px;
+  margin: 0 auto;
+
+  @media (max-width: 1558px) {
+    width: calc(1558 / 1964 * 100vw);
+  }
+
+  @media (max-width: $max-tablet-width) {
+    width: auto;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: auto;
+  }
+}
+
+.intro__list {
+  list-style-type: none;
+  margin: 197px 0 172px;
+  padding: 0;
+
+  @media (max-width: $max-tablet-width) {
+    margin: 343px 0 48px;
+  }
+}
+
+.intro__item {
+  width: 1172px;
+  margin: 0 auto;
+  min-height: 330px;
+
+  @media (max-width: 1558px) {
+    width: calc(1172 / 1964 * 100vw);
+  }
+
+  @media (max-width: $max-tablet-width) {
+    width: 700px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: auto;
+    min-height: 159px;
+  }
+}
+
+.intro__item h2 {
+  margin: 0 0 34px;
+  font-size: 94px;
+  line-height: 110px;
+
+  @media (max-width: 1558px) {
+    font-size: calc(94 / 1964 * 100vw);
+  }
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 14px;
+  }
+}
+
+.intro__item p {
+  margin: 0;
+  line-height: 38px;
+  font-weight: 400;
+  width: 868px;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 18px;
+    line-height: 25px;
+    width: auto;
+  }
+}
+
+.intro__button {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $max-tablet-width) {
+    display: none;
+  }
+}
+
+.intro__button-icon {
+  fill: transparent;
+}
