@@ -474,6 +474,7 @@ img {
   min-height: 110px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .nav__link {
@@ -2706,7 +2707,6 @@ button.swiper-pagination-bullet {
 
   .nav__wrapper {
     min-height: 74px;
-    position: relative;
   }
 
   .nav__link {

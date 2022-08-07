@@ -13,10 +13,10 @@
   align-items: center;
   min-height: 110px;
   flex-wrap: wrap;
+  position: relative;
 
   @media (max-width: $max-mobile-width) {
     min-height: 74px;
-    position: relative;
   }
 }
 
